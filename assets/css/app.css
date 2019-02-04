@@ -1,0 +1,149 @@
+:root {
+  min-height: 100vh;
+  background: linear-gradient(#223, #111);
+  color: #eee;
+  font: 1em Roboto Mono, sans-serif;
+  letter-spacing: -0.07em; /* James Bond letter-spacing */
+}
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  margin: 0;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  color: deeppink;
+}
+h2 {
+  color: deeppink;
+}
+code {
+  font-family: monospace, monospace;
+  font-size: 1rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(to right, yellow, deeppink);
+  border-image-slice: 0 0 100% 0;
+  border-image-width: 1px;
+  padding: 1rem;
+  height: 80px;
+}
+.Header-right {
+  margin-left: auto;
+}
+.Title {
+  margin: 0;
+}
+.Title-link {
+  background: linear-gradient(110deg, deeppink, yellow 25%, yellow 45%, deeppink);
+  background-repeat: no-repeat;
+  background-size: 200% auto;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  transition: background-position 500ms;
+  white-space: nowrap;
+}
+.Title-link:hover,
+.Title-link:focus {
+  background-position: 0 0;
+}
+.Title-link::before {
+  content: attr(data-text);
+  position: absolute;
+  z-index: -1;
+  background: none;
+  color: transparent;
+  text-shadow: 0 2px 2px black;
+}
+.Main {
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 1fr;
+}
+.Navigation {
+  border-right: 1px solid rgba(0,0,0,.5);
+  border-image-source: linear-gradient(yellow, deeppink);
+  border-image-slice: 0 100% 0 0;
+  border-image-width: 1px;
+  margin-top: -1px; /* dela with 9-slices border-image */
+  padding-right: 1rem;
+}
+.Navigation-list {
+  padding: 0;
+}
+.Navigation-item {
+  list-style-type: none;
+  padding: .25rem 0;
+}
+.Navigation-link {
+  text-decoration: none;
+}
+.Navigation-link:hover,
+.Navigation-link:focus,
+.Navigation-link--active {
+  color: deeppink;
+}
+.Navigation-link::after {
+  content: ' —';
+  color: transparent;
+}
+.Navigation-link:hover::after,
+.Navigation-link:focus::after,
+.Navigation-link--active::after {
+  color: yellow;
+}
+.Content {
+  padding-left: 1rem;
+}
+.Exo {
+  background: linear-gradient(to right, #ff0, #ff9344);
+  margin-left: -1rem;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  color: #111;
+}
+@media (max-width: 750px) {
+  .Title {
+    font-size: 1.6em;
+  }
+  .Main {
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .Navigation {
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(to right, yellow, deeppink);
+    border-image-slice: 0 0 100% 0;
+    border-image-width: 1px;
+    padding: 0 .5rem;
+  }
+  .Navigation-list {
+    text-align: center;
+  }
+  .Navigation-item {
+    display: inline-block;
+    margin: 0 2rem;
+  }
+  .Content {
+    padding: 0 .5rem;
+  }
+  .Exo {
+    margin-left: -.5rem;
+  }
+}
