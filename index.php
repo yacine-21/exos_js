@@ -16,6 +16,7 @@ $pages = [
   '/art-generatif' => 'Art génératif',
   '/langage-dom' => 'Langage - DOM/Events',
   '/offscreen-menu' => 'Menu offscreen',
+  '/payment-plan' => 'Tarif d’abonnement'
 ];
 Flight::set('pages', $pages);
 
