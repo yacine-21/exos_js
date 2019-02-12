@@ -5,5 +5,5 @@
     ?>
     <a class="Title-link" href="/" data-text="<?= $text ?>"><?= $text ?></a>
   </h1>
-  <a class="Header-right" href="https://wsf.iamvdo.me/js/langage">Cours JS</a>
+  <a class="Header-right" href="https://web.iamvdo.me/js/langage/">Cours JS</a>
 </header>
