@@ -22,6 +22,50 @@
 &lt;/div></code></pre>
 </div>
 
+<style>
+#offscreen {
+  position: relative;
+  height: 400px;
+  //background: rgba(255,255,255,.2);
+  overflow: hidden;
+}
+#menu {
+  position: absolute;
+  background: #ff0;
+  padding: 1rem;
+  width: 250px;
+  color: #111;
+  height: 100%;
+  transform: translate(-100%);
+  transition: transform 500ms;
+}
+#menu.opened {
+  transform: translate(0);
+}
+#menu button {
+  position: absolute;
+  left: calc(100% + 1rem);
+  border: none;
+  background: deeppink;
+  font-size: 2em;
+  color: #ff0;
+}
+#menu button:hover,
+#menu button:focus {
+  outline: 2px solid #ff0;
+}
+#not-menu {
+  padding: 1rem;
+  padding-left: 6rem;
+  font-size: 2em;
+  background: deeppink;
+  color: #111;
+}
+#not-menu p {
+  margin: 0;
+}
+</style>
+
 <div id="offscreen">
   <div id="menu">
     <button class="Hamburger">
