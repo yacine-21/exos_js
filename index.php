@@ -30,11 +30,5 @@ foreach ($pages as $key => $page) {
   }, true);
 }
 
-// 404
-Flight::map('notFound', function () {
-  Flight::render('error.php', ['error' => 404]);
-});
-
-
 Flight::start();
 ?>
