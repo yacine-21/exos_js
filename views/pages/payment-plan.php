@@ -197,4 +197,4 @@ input[type='range']:focus {
 }
 </style>
 
-<script src="assets/js/lib/input-range.js"></script>
+<script src="../../assets/js/lib/input-range.js"></script>

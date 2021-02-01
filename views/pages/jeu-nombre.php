@@ -17,3 +17,5 @@
     </li>
   </ul>
 </div>
+
+<script src="../../assets/js/lib/jeu_nombre.js"></script>

@@ -15,8 +15,17 @@ $pages = [
   '/jeu-nombre' => 'Jeu nombre',
   '/art-generatif' => 'Art génératif',
   '/langage-dom' => 'Langage - DOM/Events',
+  '/gmail' => 'Gmail',
+  '/twitter' => 'Twitter',
   '/offscreen-menu' => 'Menu offscreen',
-  '/payment-plan' => 'Tarif d’abonnement'
+  '/payment-plan' => 'Tarif d’abonnement',
+  '/test' => "Drag Me",
+  "/formulaire" => "Formulaire",
+  "/yacine" => "EXO YACINE",
+  "/methode_map_js" => "JS METHODES MAP()",
+  "/methode__filter_js" => "JS METHODES FILTER()",
+  "/methode__foreach_js" => "JS METHODES FOREACH()",
+  "/js_promise" => "JS PROMSISE",
 ];
 Flight::set('pages', $pages);
 

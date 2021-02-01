@@ -38,4 +38,8 @@ ctx.lineTo(0, 100);</code></pre>
   height: 320px;
 }
 </style>
-<canvas id="canvas"></canvas>
+<canvas id="canvas">
+</canvas>
+
+<script src="../../assets/js/lib/art_generatif.js"></script>
+<script src = "../../assets/js/lib/exo_en_plus.js"></script>

@@ -41,3 +41,5 @@
     <li>Sinon, afficher "Le nombre (nombre) a été trouvé"</li>
   </ul>
 </div>
+
+<script src="/assets/js/code.js"></script>

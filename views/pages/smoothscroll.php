@@ -21,16 +21,39 @@
   </ul>
 </div>
 
+<p id="haut">
+  <a href="#milieu">Vers le milieu</a>
+  <a href="#bas">Vers le bas</a>
+</p>
+
 <?php
-  // fake <p>
-  for ($i=0; $i < 70; $i++) {
-    echo "<p>fake</p>";
+  // mot au hasard <p>
+  for ($i=0; $i <80; $i++) {
+    echo "<p>YACINEEEEEEEEEE</p>";
   }
 ?>
 
+<p id="milieu">
+  <a href="#bas">Vers le bas</a>
+</p>
+
 <?php
-  // fake <p>
-  for ($i=0; $i < 70; $i++) {
-    echo "<p>fake</p>";
+  // mot au hasard <p>
+  for ($i=0; $i <80; $i++) {
+    echo "<p>YACINEEEEEEEEEE</p>";
   }
 ?>
+
+<p id="bas">
+  <a href="#haut">Vers le haut</a>
+</p>
+
+<script src="/assets/js/lib/js.js"></script>
+
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 50,
+  easing: "easeInOutCubic"
+});
+</script>
+

@@ -13,3 +13,15 @@
 
 <div id="heure">00:00:00</div>
 <button id="bouton">Quelle heure est-il ?</button>
+
+<style>
+.multiple{
+  color : red;
+  font-weight: bold;
+}
+.click{
+  color : blue;
+}
+</style>
+  
+<script src="../../assets/js/lib/dom.js"></script>
