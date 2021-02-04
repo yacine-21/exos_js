@@ -27,6 +27,7 @@ $pages = [
   "/methode__foreach_js" => "JS METHODES FOREACH()",
   "/js_promise" => "JS PROMSISE",
   "/fetch" => "REQUETE FETCH",
+  "/adresse"=> "ADRESSE",
 ];
 Flight::set('pages', $pages);
 
