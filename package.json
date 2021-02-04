@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "name": "html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamvdo/wsf-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamvdo/wsf-js/issues"
+  },
+  "homepage": "https://github.com/iamvdo/wsf-js#readme",
+  "keywords": [],
+  "description": ""
+}

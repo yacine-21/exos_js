@@ -97,4 +97,73 @@ console.log("fin de la boucle for et début de la forEach")
 myArray1.forEach(function(element, index){
     console.log("Je suis a l'index",index,"je suis équivalent a" ,element)
 })
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+    random_number = Math.round((Math.random() * 7 ))
+
+while (random_number != 5) {
+    random_number = Math.round((Math.random() * 5 ))
+    console.log("JE SUIS LE NOMBRE RANDOM : "+random_number)
+}
+
+
+ let pos = () => {
+      navigator.geolocation.getCurrentPosition(function (position) {
+          latitude = position.coords.latitude;
+          longitude = position.coords.longitude;
+          pos = [latitude,longitude]
+          console.log(pos[0], pos[1])
+          pos2 = pos.map( pos => pos * random_number)
+          console.log(pos2[0], pos2[1])
+})};
+ pos();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let form = document.getElementById("repo")
+let owner_name = document.getElementById("owner");
+let name_repos = document.getElementById("name_repo")
+let div = document.getElementById("div")
+
+form.addEventListener("submit", submit)
+
+function submit (event){
+        
+    url = 'https://api.github.com/repos/'
+    url += owner_name.value + "/"
+    url += name_repos.value
+    
+    console.log(owner_name.value)
+    console.log(name_repos.value)
+    console.log(url)
+    
+    fetch(url)
+    .then(res => res.json())
+    .then(repo => {
+
+    let description = repo.description
+    let owner = repo.owner.login
+    let watch = repo.parent.watchers
+
  
+    p1.innerText = "YOUR REPOSITORY HAS BEEW WATCHED " + watch + " TIMES"
+    p2.innerText = "YOUR DESCRIPTION REPOSITORY IS : " + description
+    p3.innerText = "THE OWNER OF THIS REPOSITORY IS : " + owner
+
+    }).catch(error => {
+        console.log(error)
+        p1.innerText = error
+    })
+    let p1 = document.createElement("p");
+    let p2 = document.createElement("p");
+    let p3 = document.createElement("p");
+    x = false;
+    
+    div.appendChild(p1)
+    div.appendChild(p2)
+    div.appendChild(p3)
+
+        event.preventDefault();    
+}
