@@ -1,4 +1,4 @@
-
+<div id="p"></div>
 <canvas id="myChart"></canvas>
 
 
