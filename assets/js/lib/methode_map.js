@@ -4,3 +4,14 @@
 
 // Étape 1 : Créer un tableau contenant un certaines nombres d'éléments (que des nombres)
 // Étape 2 : Utilisez la methode map pour créer myNewArray tableau a partir de myArray et dans ce nouveau myNewArray retourner le carré des nombres présent dans myArray
+
+
+let nombres = [2,4,8,12];
+
+// let resultat = nombres.map((nombre) => {
+//     return nombre * nombre
+// })
+let resultat = nombres.map((nombre) => nombre * n)
+
+console.log(resultat)
+// [4,16,64,144]

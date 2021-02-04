@@ -97,3 +97,4 @@ console.log("fin de la boucle for et début de la forEach")
 myArray1.forEach(function(element, index){
     console.log("Je suis a l'index",index,"je suis équivalent a" ,element)
 })
+ 

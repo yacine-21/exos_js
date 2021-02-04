@@ -1,5 +1,5 @@
 // créer mon tableau
-prenoms = ["Maya la moche","Yacine","Arthur","Gon","Hisoka","Meruem"]
+prenoms = ["Maya la moche","Yacine","Arthur","Gon","Hisoka","Meruem"];
 
 /* créer une fonction qui retourne un nouveau 
 tableau contenant uniquement les prénoms de la liste
@@ -25,11 +25,11 @@ tableau doivent être stockés en majuscule.
 
 
 function avecA (prenoms){
-    return prenom.toLowerCase.includes("a");
+    return prenoms.toLowerCase().includes("a");
 }
 
 function maj (prenoms){
-    return prenoms.toUpperCase;
+    return prenoms.toUpperCase();
 }
 
 function traitement (prenoms){
